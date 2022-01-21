@@ -2,6 +2,8 @@
 
 Goroutine leak detector to help avoid Goroutine leaks.
 
+Forked by dkegel-fastly to allow use via go.mod replace line while https://github.com/uber-go/goleak/pull/72 percolates.
+
 ## Installation
 
 You can use `go get` to get the latest version:

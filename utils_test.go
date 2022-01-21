@@ -25,7 +25,7 @@ import (
 	"strings"
 	"testing"
 
-	"go.uber.org/goleak/internal/stack"
+	"github.com/dkegel-fastly/goleak/internal/stack"
 )
 
 type blockedG struct {

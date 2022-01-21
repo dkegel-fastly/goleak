@@ -27,7 +27,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"go.uber.org/goleak"
+	"github.com/dkegel-fastly/goleak"
 )
 
 func TestNoLeaks(t *testing.T) {

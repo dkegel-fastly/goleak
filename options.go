@@ -24,7 +24,7 @@ import (
 	"strings"
 	"time"
 
-	"go.uber.org/goleak/internal/stack"
+	"github.com/dkegel-fastly/goleak/internal/stack"
 )
 
 // Option lets users specify custom verifications.
@@ -50,7 +50,7 @@ func (f optionFunc) apply(opts *opts) { f(opts) }
 
 // IgnoreTopFunction ignores any goroutines where the specified function
 // is at the top of the stack. The function name should be fully qualified,
-// e.g., go.uber.org/goleak.IgnoreTopFunction
+// e.g., github.com/dkegel-fastly/goleak.IgnoreTopFunction
 func IgnoreTopFunction(f string) Option {
 	return addFilter(func(s stack.Stack) bool {
 		return s.FirstFunction() == f
